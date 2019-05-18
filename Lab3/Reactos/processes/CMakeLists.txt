@@ -1,0 +1,5 @@
+add_library(processes SHARED processes.c processes.rc)
+set_module_type(processes kernelmodedriver)
+add_importlibs(processes ntoskrnl hal)
+add_cd_file(TARGET processes DESTINATION reactos/system32/drivers FOR all)
+add_registry_inf(processes_reg.inf)

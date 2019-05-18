@@ -1,0 +1,7 @@
+; processes
+[AddReg]
+HKLM,"SYSTEM\CurrentControlSet\Services\processes","ErrorControl",0x00010001,0x00000000
+HKLM,"SYSTEM\CurrentControlSet\Services\processes","ImagePath",0x00020000,"system32\drivers\processes.sys"
+HKLM,"SYSTEM\CurrentControlSet\Services\processes","Start",0x00000001,0x00000003
+HKLM,"SYSTEM\CurrentControlSet\Services\processes","Tag",0x00010001,0x00000002
+HKLM,"SYSTEM\CurrentControlSet\Services\processes","Type",0x00010001,0x00000001

@@ -1,0 +1,5 @@
+add_library(virtual SHARED virtual.c virtual.rc)
+set_module_type(virtual kernelmodedriver)
+add_importlibs(virtual ntoskrnl hal)
+add_cd_file(TARGET virtual DESTINATION reactos/system32/drivers FOR all)
+add_registry_inf(virtual_reg.inf)
